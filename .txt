@@ -1,0 +1,72 @@
+The project mainly focuses on customer-side APIs such as user authentication, cart management, and order handling.
+
+1. Technology Stack
+    API / Backend ---
+        Node.js
+        Express.js
+
+    Database ---
+        MongoDB
+        Mongoose (ODM)
+
+    Authentication ---
+        JWT (JSON Web Token)
+        bcrypt (password hashing)
+
+    Tools ---
+        Postman (API testing)
+        GitHub (version control)
+        VS Code (Development)
+--------------
+2. Server Setup
+
+    Created two separate backend servers
+        Server 1 → Port 3001
+        Server 2 → Port 3002
+---------------------------------------
+3. Database Design (MongoDB Collections)
+
+    Users Collection ---
+        _id (Default)
+        name
+        email
+        password
+        createdAt (Default)
+
+    Products Collection ---
+        _id (Default)
+        productName
+        price
+        category
+
+    Cart Collection ---
+        cartUuid
+        userId (Default)
+        productId (Default)
+        quantity
+
+    Orders Collection ---
+        orderUuid (unique)
+        userId (Default)
+        items
+        totalAmount
+        orderStatus
+        createdAt (Default)
+--------------------------
+4. API Flow (Customer Side)
+
+    1️.User Authentication ---
+        Signup API
+        Login API
+        Get user profile API
+        JWT-based route protection
+
+    2️.Cart APIs ---
+        Add product to cart
+        Update cart item quantity
+        Remove product from cart
+        View cart items
+
+    3️.Order APIs ---
+        Place order
+        View user orders
