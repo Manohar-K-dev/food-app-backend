@@ -1331,3 +1331,7 @@
 2025-12-31 15:59:12 [INFO] Server started {"port":"3002","serverName":"server2"}
 2025-12-31 15:59:13 [INFO] Database connected {"serverName":"server1"}
 2025-12-31 15:59:13 [INFO] Database connected {"serverName":"server2"}
+2025-12-31 15:59:14 [INFO] Server started {"port":"3002","serverName":"server2"}
+2025-12-31 15:59:14 [INFO] Server started {"port":"3001","serverName":"server1"}
+2025-12-31 15:59:14 [INFO] Database connected {"serverName":"server2"}
+2025-12-31 15:59:14 [INFO] Database connected {"serverName":"server1"}
