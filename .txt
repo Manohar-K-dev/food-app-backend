@@ -60,13 +60,19 @@ The project mainly focuses on customer-side APIs such as user authentication, ca
         Login API
         Get user profile API
         JWT-based route protection
+        
+    2.Product APIs ---
+        Create Product
+        Delete Product
+        Update Product
+        Get Single and All Products
 
-    2️.Cart APIs ---
+    3.Cart APIs ---
         Add product to cart
         Update cart item quantity
         Remove product from cart
         View cart items
 
-    3️.Order APIs ---
+    4.Order APIs ---
         Place order
         View user orders
