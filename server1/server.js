@@ -6,6 +6,7 @@ import connectDB from "./config/dbConfig.js";
 import userRoutes from "../common/routes/userRoutes.js";
 import productRoutes from "../common/routes/productRoutes.js";
 import cartRoutes from "../common/routes/cartRoutes.js";
+import orderRoutes from "../common/routes/orderRoutes.js";
 import { requestLogger, apiLogger } from "../common/utils/logger.js";
 
 const app = express();
@@ -21,6 +22,7 @@ connectDB();
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/carts", cartRoutes);
+app.use("/api/orders", orderRoutes);
 
 app.get("/", (req, res) => {
   res.send("Server 1 running");

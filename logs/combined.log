@@ -1335,3 +1335,1512 @@
 2025-12-31 15:59:14 [INFO] Server started {"port":"3001","serverName":"server1"}
 2025-12-31 15:59:14 [INFO] Database connected {"serverName":"server2"}
 2025-12-31 15:59:14 [INFO] Database connected {"serverName":"server1"}
+2025-12-31 17:14:03 [INFO] Server started {"port":"3001","serverName":"server1"}
+2025-12-31 17:14:03 [INFO] Database connected {"serverName":"server1"}
+2025-12-31 17:14:06 [INFO] Server started {"port":"3001","serverName":"server1"}
+2025-12-31 17:14:06 [INFO] Database connected {"serverName":"server1"}
+2025-12-31 17:14:16 [INFO] Server started {"port":"3002","serverName":"server2"}
+2025-12-31 17:14:16 [INFO] Database connected {"serverName":"server2"}
+2025-12-31 17:14:22 [INFO] Token verification successful {"userId":"6954ef216492aa2bdf5e995b","email":"manohar@example.com","currentServer":"server1"}
+2025-12-31 17:14:22 [INFO] Product creation started {"productName":"Paneer Butter Masala","server":"server1"}
+2025-12-31 17:14:22 [INFO] Product created successfully {"productId":"69550c967be71c30088b54c2","productName":"Paneer Butter Masala","server":"server1"}
+2025-12-31 17:14:22 [INFO] HTTP Request {"method":"POST","url":"/api/products","status":201,"duration":"86ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2025-12-31 17:14:22 [INFO] Sending sync request {"email":"Paneer Butter Masala","fromServer":"server1","toServer":"http://localhost:3002"}
+2025-12-31 17:14:22 [INFO] Sync request received {"email":"Paneer Butter Masala","fromServer":"server1","currentServer":"server2"}
+2025-12-31 17:14:22 [INFO] Sync successful {"email":"Paneer Butter Masala","server":"server2"}
+2025-12-31 17:14:22 [INFO] HTTP Request {"method":"POST","url":"/api/products/sync","status":201,"duration":"136ms","ip":"::1","userAgent":"axios/1.13.2"}
+2025-12-31 17:14:22 [INFO] Sync successful {"email":"Paneer Butter Masala","server":"server1"}
+2025-12-31 17:15:30 [INFO] Token verification successful {"userId":"6954ef1983bdbf70edd76781","email":"john.doe@example.com","currentServer":"server2"}
+2025-12-31 17:15:30 [INFO] Product update started {"productId":"69550c967be71c30088b54c2","server":"server2"}
+2025-12-31 17:15:30 [INFO] Product updated successfully {"productId":"69550c967be71c30088b54c2","productName":"Paneer Butter Masala","server":"server2"}
+2025-12-31 17:15:30 [INFO] HTTP Request {"method":"PUT","url":"/api/products/69550c967be71c30088b54c2","status":200,"duration":"117ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2025-12-31 17:15:30 [INFO] Sync update received {"syncId":"server1_product_1767181462520_midn1zkfu","updates":{"price":200,"available":false,"rating":4.9},"currentServer":"server1"}
+2025-12-31 17:15:30 [INFO] Product updated via sync {"syncId":"server1_product_1767181462520_midn1zkfu","name":"Paneer Butter Masala","currentServer":"server1"}
+2025-12-31 17:15:30 [INFO] HTTP Request {"method":"PUT","url":"/api/products/sync/server1_product_1767181462520_midn1zkfu","status":200,"duration":"77ms","ip":"::1","userAgent":"axios/1.13.2"}
+2025-12-31 17:15:30 [INFO] Sync successful {"email":"Update for Paneer Butter Masala","server":"server2"}
+2025-12-31 17:16:11 [INFO] Login attempt started {"email":"john.doe@example.com","server":"server1"}
+2025-12-31 17:16:11 [INFO] Login successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","server":"server1"}
+2025-12-31 17:16:11 [INFO] HTTP Request {"method":"POST","url":"/api/users/login","status":200,"duration":"137ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2025-12-31 17:17:01 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2025-12-31 17:17:01 [INFO] Product deletion started {"productId":"69550c967be71c30088b54c2","server":"server1"}
+2025-12-31 17:17:01 [INFO] Product deleted successfully {"productId":"69550c967be71c30088b54c2","productName":"Paneer Butter Masala","server":"server1"}
+2025-12-31 17:17:01 [INFO] HTTP Request {"method":"DELETE","url":"/api/products/69550c967be71c30088b54c2","status":200,"duration":"74ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2025-12-31 17:17:02 [INFO] Sync delete received {"syncId":"server1_product_1767181462520_midn1zkfu","currentServer":"server2"}
+2025-12-31 17:17:02 [INFO] Product deleted via sync {"syncId":"server1_product_1767181462520_midn1zkfu","name":"Paneer Butter Masala","currentServer":"server2"}
+2025-12-31 17:17:02 [INFO] HTTP Request {"method":"DELETE","url":"/api/products/sync/server1_product_1767181462520_midn1zkfu","status":200,"duration":"40ms","ip":"::1","userAgent":"axios/1.13.2"}
+2025-12-31 17:17:02 [INFO] Sync successful {"email":"Delete for Paneer Butter Masala","server":"server1"}
+2025-12-31 17:17:26 [INFO] Fetching all products {"currentServer":"server1","filters":{}}
+2025-12-31 17:17:26 [INFO] All products fetched {"count":0,"server":"server1"}
+2025-12-31 17:17:26 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":200,"duration":"36ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:17:27 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"5ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:17:31 [INFO] Fetching all products {"currentServer":"server1","filters":{}}
+2025-12-31 17:17:31 [INFO] All products fetched {"count":0,"server":"server1"}
+2025-12-31 17:17:31 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":304,"duration":"30ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:17:36 [INFO] Fetching all products {"currentServer":"server2","filters":{}}
+2025-12-31 17:17:36 [INFO] All products fetched {"count":0,"server":"server2"}
+2025-12-31 17:17:36 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":200,"duration":"42ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:17:36 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"5ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:17:56 [INFO] Token verification successful {"userId":"6954ef216492aa2bdf5e995b","email":"manohar@example.com","currentServer":"server1"}
+2025-12-31 17:17:56 [INFO] Product creation started {"productName":"Paneer Butter Masala","server":"server1"}
+2025-12-31 17:17:56 [INFO] Product created successfully {"productId":"69550d6c7be71c30088b54cc","productName":"Paneer Butter Masala","server":"server1"}
+2025-12-31 17:17:56 [INFO] HTTP Request {"method":"POST","url":"/api/products","status":201,"duration":"69ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2025-12-31 17:17:57 [INFO] Sending sync request {"email":"Paneer Butter Masala","fromServer":"server1","toServer":"http://localhost:3002"}
+2025-12-31 17:17:57 [INFO] Sync request received {"email":"Paneer Butter Masala","fromServer":"server1","currentServer":"server2"}
+2025-12-31 17:17:57 [INFO] Sync successful {"email":"Paneer Butter Masala","server":"server2"}
+2025-12-31 17:17:57 [INFO] Sync successful {"email":"Paneer Butter Masala","server":"server1"}
+2025-12-31 17:17:57 [INFO] HTTP Request {"method":"POST","url":"/api/products/sync","status":201,"duration":"108ms","ip":"::1","userAgent":"axios/1.13.2"}
+2025-12-31 17:18:01 [INFO] Fetching all products {"currentServer":"server2","filters":{}}
+2025-12-31 17:18:01 [INFO] All products fetched {"count":1,"server":"server2"}
+2025-12-31 17:18:01 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":200,"duration":"37ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:18:02 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"2ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:18:10 [INFO] Searching products {"query":"paneer","currentServer":"server1"}
+2025-12-31 17:18:10 [INFO] Products search completed {"query":"paneer","count":1,"currentServer":"server1"}
+2025-12-31 17:18:10 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=paneer","status":200,"duration":"44ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:18:10 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"2ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:33 [INFO] HTTP Request {"method":"GET","url":"/","status":200,"duration":"45ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:33 [INFO] HTTP Request {"method":"GET","url":"/","status":200,"duration":"3ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:33 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"11ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:35 [INFO] HTTP Request {"method":"GET","url":"/","status":200,"duration":"14ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:35 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"4ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:35 [INFO] Fetching all products {"currentServer":"server1","filters":{}}
+2025-12-31 17:53:35 [INFO] All products fetched {"count":1,"server":"server1"}
+2025-12-31 17:53:35 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":200,"duration":"100ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:36 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:36 [INFO] Fetching all products {"currentServer":"server2","filters":{}}
+2025-12-31 17:53:36 [INFO] All products fetched {"count":1,"server":"server2"}
+2025-12-31 17:53:36 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":200,"duration":"61ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:36 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:37 [INFO] Searching products {"query":"paneer","currentServer":"server1"}
+2025-12-31 17:53:37 [INFO] Products search completed {"query":"paneer","count":1,"currentServer":"server1"}
+2025-12-31 17:53:37 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=paneer","status":200,"duration":"43ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:37 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"2ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:39 [INFO] Single product fetched {"productId":"6954efa383bdbf70edd7678d","server":"server1"}
+2025-12-31 17:53:39 [WARN] Product not found {"productId":"6954efa383bdbf70edd7678d","server":"server1"}
+2025-12-31 17:53:39 [WARN] HTTP Request {"method":"GET","url":"/api/products/6954efa383bdbf70edd7678d","status":404,"duration":"45ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:53:39 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2025-12-31 17:54:56 [INFO] Server started {"port":"3002","serverName":"server2"}
+2025-12-31 17:54:56 [INFO] Server started {"port":"3001","serverName":"server1"}
+2025-12-31 17:54:56 [ERROR] Database connection error {"error":"querySrv ECONNREFUSED _mongodb._tcp.cluster0.kolet3u.mongodb.net","serverName":"server1"}
+2025-12-31 17:54:56 [ERROR] Database connection error {"error":"querySrv ECONNREFUSED _mongodb._tcp.cluster0.kolet3u.mongodb.net","serverName":"server2"}
+2026-01-01 11:25:34 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:25:34 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:25:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:25:43 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:27:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:27:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:27:58 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:27:58 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:23 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:28:23 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:28:23 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:28:23 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:30 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:28:30 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:28:30 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:30 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:28:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:28:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:28:32 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:28:32 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:36 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:28:36 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:28:36 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:28:36 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:39 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:28:39 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:28:39 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:39 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:28:42 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:28:42 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:28:43 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:28:43 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:45 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:28:45 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:28:45 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:28:45 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:50 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:28:50 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:28:50 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:28:50 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:55 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:28:55 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:28:55 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:28:55 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:35:44 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:35:44 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:35:44 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:35:44 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:35:46 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:35:46 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:35:46 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:35:46 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:36:56 [INFO] Token verification successful {"userId":"6954ef216492aa2bdf5e995b","email":"manohar@example.com","currentServer":"server1"}
+2026-01-01 11:36:56 [INFO] Product creation started {"productName":"Unknown","server":"server1"}
+2026-01-01 11:36:56 [WARN] Product validation failed {"errors":{"name":"Product name is required"},"server":"server1"}
+2026-01-01 11:36:56 [WARN] HTTP Request {"method":"POST","url":"/api/products","status":400,"duration":"75ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 11:37:08 [INFO] Token verification successful {"userId":"6954ef216492aa2bdf5e995b","email":"manohar@example.com","currentServer":"server1"}
+2026-01-01 11:37:08 [INFO] Product creation started {"productName":"Unknown","server":"server1"}
+2026-01-01 11:37:08 [WARN] Product validation failed {"errors":{"name":"Product name is required"},"server":"server1"}
+2026-01-01 11:37:08 [WARN] HTTP Request {"method":"POST","url":"/api/products","status":400,"duration":"40ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 11:37:15 [INFO] Token verification successful {"userId":"6954ef216492aa2bdf5e995b","email":"manohar@example.com","currentServer":"server1"}
+2026-01-01 11:37:15 [INFO] Product creation started {"productName":"1","server":"server1"}
+2026-01-01 11:37:15 [WARN] Product validation failed {"errors":{"name":"Product name must be at least 3 characters"},"server":"server1"}
+2026-01-01 11:37:15 [WARN] HTTP Request {"method":"POST","url":"/api/products","status":400,"duration":"34ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 11:37:22 [INFO] Token verification successful {"userId":"6954ef216492aa2bdf5e995b","email":"manohar@example.com","currentServer":"server1"}
+2026-01-01 11:37:22 [INFO] Product creation started {"productName":"123","server":"server1"}
+2026-01-01 11:37:22 [INFO] Product created successfully {"productId":"69560f1a5b86585e1dfbfde6","productName":"123","server":"server1"}
+2026-01-01 11:37:22 [INFO] HTTP Request {"method":"POST","url":"/api/products","status":201,"duration":"110ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 11:37:22 [INFO] Sending sync request {"email":"123","fromServer":"server1","toServer":"http://localhost:3002"}
+2026-01-01 11:37:22 [INFO] Sync request received {"email":"123","fromServer":"server1","currentServer":"server2"}
+2026-01-01 11:37:22 [INFO] Sync successful {"email":"123","server":"server2"}
+2026-01-01 11:37:22 [INFO] HTTP Request {"method":"POST","url":"/api/products/sync","status":201,"duration":"134ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 11:37:22 [INFO] Sync successful {"email":"123","server":"server1"}
+2026-01-01 11:37:43 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"6ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:37:44 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"6ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:37:45 [INFO] Fetching all products {"currentServer":"server1","filters":{}}
+2026-01-01 11:37:45 [INFO] All products fetched {"count":2,"server":"server1"}
+2026-01-01 11:37:45 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":200,"duration":"42ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:37:45 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:38:18 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 11:38:18 [INFO] Product deletion started {"productId":"69560f1a5b86585e1dfbfde6","server":"server1"}
+2026-01-01 11:38:18 [INFO] Product deleted successfully {"productId":"69560f1a5b86585e1dfbfde6","productName":"123","server":"server1"}
+2026-01-01 11:38:18 [INFO] HTTP Request {"method":"DELETE","url":"/api/products/69560f1a5b86585e1dfbfde6","status":200,"duration":"78ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 11:38:18 [INFO] Sync delete received {"syncId":"server1_product_1767247642504_f32prkqqq","currentServer":"server2"}
+2026-01-01 11:38:18 [INFO] Product deleted via sync {"syncId":"server1_product_1767247642504_f32prkqqq","name":"123","currentServer":"server2"}
+2026-01-01 11:38:18 [INFO] HTTP Request {"method":"DELETE","url":"/api/products/sync/server1_product_1767247642504_f32prkqqq","status":200,"duration":"37ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 11:38:18 [INFO] Sync successful {"email":"Delete for 123","server":"server1"}
+2026-01-01 11:38:22 [INFO] Fetching all products {"currentServer":"server1","filters":{}}
+2026-01-01 11:38:22 [INFO] All products fetched {"count":1,"server":"server1"}
+2026-01-01 11:38:22 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":200,"duration":"33ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:38:34 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:38:35 [INFO] Fetching all products {"currentServer":"server2","filters":{}}
+2026-01-01 11:38:35 [INFO] All products fetched {"count":1,"server":"server2"}
+2026-01-01 11:38:35 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":200,"duration":"37ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:38:35 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:38:36 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:38:37 [INFO] Searching products {"query":"paneer","currentServer":"server1"}
+2026-01-01 11:38:37 [INFO] Products search completed {"query":"paneer","count":1,"currentServer":"server1"}
+2026-01-01 11:38:37 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=paneer","status":200,"duration":"35ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:38:37 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"2ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:38:44 [INFO] Searching products {"query":"p","currentServer":"server1"}
+2026-01-01 11:38:44 [INFO] Products search completed {"query":"p","count":1,"currentServer":"server1"}
+2026-01-01 11:38:44 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=p","status":200,"duration":"31ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:38:53 [INFO] Searching products {"query":"neer","currentServer":"server1"}
+2026-01-01 11:38:53 [INFO] Products search completed {"query":"neer","count":1,"currentServer":"server1"}
+2026-01-01 11:38:53 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=neer","status":200,"duration":"40ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:39:07 [INFO] Searching products {"query":"idly","currentServer":"server1"}
+2026-01-01 11:39:07 [INFO] Products search completed {"query":"idly","count":0,"currentServer":"server1"}
+2026-01-01 11:39:07 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=idly","status":200,"duration":"33ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:39:10 [INFO] Searching products {"query":"idly","currentServer":"server1"}
+2026-01-01 11:39:10 [INFO] Products search completed {"query":"idly","count":0,"currentServer":"server1"}
+2026-01-01 11:39:10 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=idly","status":200,"duration":"32ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:39:10 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"0ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:39:14 [INFO] Searching products {"query":"panner","currentServer":"server1"}
+2026-01-01 11:39:14 [INFO] Products search completed {"query":"panner","count":0,"currentServer":"server1"}
+2026-01-01 11:39:14 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=panner","status":200,"duration":"32ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:39:18 [INFO] Searching products {"query":"paneer","currentServer":"server1"}
+2026-01-01 11:39:18 [INFO] Products search completed {"query":"paneer","count":1,"currentServer":"server1"}
+2026-01-01 11:39:18 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=paneer","status":304,"duration":"36ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:39:21 [INFO] Searching products {"query":"paneer","currentServer":"server1"}
+2026-01-01 11:39:21 [INFO] Products search completed {"query":"paneer","count":1,"currentServer":"server1"}
+2026-01-01 11:39:21 [INFO] HTTP Request {"method":"GET","url":"/api/products/search?query=paneer","status":200,"duration":"36ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:39:21 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:39:25 [INFO] Single product fetched {"productId":"6954efa383bdbf70edd7678d","server":"server1"}
+2026-01-01 11:39:25 [WARN] Product not found {"productId":"6954efa383bdbf70edd7678d","server":"server1"}
+2026-01-01 11:39:25 [WARN] HTTP Request {"method":"GET","url":"/api/products/6954efa383bdbf70edd7678d","status":404,"duration":"40ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:39:25 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"1ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 11:45:37 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:45:37 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:45:37 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:45:37 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:45:41 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:45:41 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:45:43 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:45:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:45:43 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:45:43 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:45:44 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:45:44 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:45:44 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:45:44 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:45:45 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:45:45 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:45:46 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:45:46 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:46:50 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:46:50 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:46:50 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:46:50 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:50:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:50:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:50:58 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:50:58 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:10 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:51:10 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:51:11 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:11 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:51:14 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:51:14 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:51:15 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:15 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:51:21 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:51:21 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:51:21 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:21 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:51:24 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:51:24 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:51:24 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:24 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:51:34 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:51:34 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:51:34 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:34 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:51:39 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:51:39 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:51:40 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:40 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:51:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:51:43 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:51:43 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:43 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:51:49 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:51:49 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:51:50 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:50 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:51:51 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:51:51 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:51:51 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:51:51 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:53:33 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:53:33 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:53:33 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:53:33 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:53:37 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:53:37 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:53:38 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:53:38 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:53:48 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:53:48 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:53:48 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:53:48 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:53:51 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:53:51 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:53:51 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:53:51 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:53:56 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:53:56 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:53:56 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:53:57 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:54:07 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:54:07 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:54:07 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:54:07 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:54:12 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:54:12 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:54:12 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:54:12 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:54:15 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:54:15 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:54:15 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:54:15 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:59:48 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:59:48 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:59:48 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 11:59:48 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:59:54 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 11:59:54 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 11:59:54 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 11:59:54 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:00:29 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:00:29 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:00:30 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:00:30 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:00:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:00:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:00:33 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:00:33 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:08:14 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:08:14 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:08:15 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:08:15 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:08:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:08:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:08:32 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:08:32 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:08:38 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:08:38 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:08:38 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:08:38 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:08:46 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:08:46 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:08:47 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:08:47 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:08:50 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:08:50 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:08:51 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:08:51 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:09:58 [INFO] Login attempt started {"email":"john.doe@example.com","server":"server1"}
+2026-01-01 12:09:58 [INFO] Login successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","server":"server1"}
+2026-01-01 12:09:58 [INFO] HTTP Request {"method":"POST","url":"/api/users/login","status":200,"duration":"171ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 12:12:22 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 12:12:22 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:12:22 [WARN] Order validation failed {"userId":"6954ef186492aa2bdf5e9957","errors":"{\"estimatedDelivery\":\"Estimated delivery date cannot be in the past\"}","server":"server1"}
+2026-01-01 12:12:22 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":400,"duration":"50ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 12:12:44 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 12:12:44 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:12:44 [ERROR] Order creation failed {"error":"Cannot read properties of null (reading 'available')","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:12:44 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"121ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 12:13:05 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 12:13:05 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:13:05 [WARN] Order validation failed {"userId":"6954ef186492aa2bdf5e9957","errors":"{\"estimatedDelivery\":\"Estimated delivery date cannot be in the past\"}","server":"server1"}
+2026-01-01 12:13:05 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":400,"duration":"37ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 12:14:14 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:14:14 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:14:14 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:14:14 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:16:08 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:16:08 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:16:08 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:16:08 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:16:55 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 12:16:55 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:16:55 [ERROR] Order creation failed {"error":"Cannot read properties of null (reading 'available')","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:16:55 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"152ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 12:23:47 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:23:47 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:23:47 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:23:47 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:23:49 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:23:49 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:23:50 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:23:50 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:23:55 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:23:55 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:23:56 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:23:56 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:24:16 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:24:16 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:24:16 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:24:16 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:24:17 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:24:17 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:24:18 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:24:18 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:24:38 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:24:38 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:24:38 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:24:38 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:25:24 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:25:24 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:25:24 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:25:24 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:25:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:25:43 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:25:44 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:25:44 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:25:46 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:25:46 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:25:47 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:25:47 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:26:29 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:26:29 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:26:30 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:26:30 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:32:18 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:32:18 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:32:18 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:32:18 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:33:35 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 12:33:35 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:33:35 [WARN] Removed invalid products from cart {"userId":"6954ef186492aa2bdf5e9957","removedItems":["unknown"],"currentServer":"server1"}
+2026-01-01 12:33:35 [ERROR] Order creation failed {"error":"apiLogger.order.create.cartEmptyAfterCleanup is not a function","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:33:35 [ERROR] Order creation failed {"error":"apiLogger.order.create.cartEmptyAfterCleanup is not a function","stack":"TypeError: apiLogger.order.create.cartEmptyAfterCleanup is not a function\n    at createOrder (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/controllers/orderController.js:116:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 12:33:35 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"215ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 12:36:33 [INFO] Fetching all products {"currentServer":"server1","filters":{}}
+2026-01-01 12:36:33 [INFO] All products fetched {"count":1,"server":"server1"}
+2026-01-01 12:36:33 [INFO] HTTP Request {"method":"GET","url":"/api/products","status":200,"duration":"43ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 12:36:33 [WARN] HTTP Request {"method":"GET","url":"/favicon.ico","status":404,"duration":"4ms","ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+2026-01-01 12:36:48 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 12:36:48 [INFO] Adding item to cart started {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 12:36:48 [INFO] New cart created for user {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 12:36:48 [INFO] New product added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"currentServer":"server1"}
+2026-01-01 12:36:48 [INFO] Item added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 12:36:48 [INFO] Cart saved successfully {"userId":"6954ef186492aa2bdf5e9957","itemsCount":1,"subTotal":0,"currentServer":"server1"}
+2026-01-01 12:36:48 [INFO] HTTP Request {"method":"POST","url":"/api/carts/add","status":200,"duration":"220ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 12:36:48 [INFO] Starting cart sync to other server {"userId":"6954ef186492aa2bdf5e9957","otherServerUrl":"http://localhost:3002","currentServer":"server1"}
+2026-01-01 12:36:48 [INFO] Order sync received {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","from":"server1","to":"server2"}
+2026-01-01 12:36:48 [INFO] Cart sync request received {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767251208530","serverOrigin":"server1","itemsCount":1,"currentServer":"server2"}
+2026-01-01 12:36:48 [INFO] Order Cart for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","server":"server2"}
+2026-01-01 12:36:48 [INFO] New cart created via sync {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767251208530","itemsCount":1,"serverOrigin":"server1","currentServer":"server2"}
+2026-01-01 12:36:48 [INFO] HTTP Request {"method":"POST","url":"/api/carts/sync","status":201,"duration":"165ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 12:36:48 [INFO] Order Cart update for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart update for user 6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:36:48 [INFO] Cart sync completed successfully {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 12:38:11 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 12:38:11 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:38:11 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 12:38:11 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","stack":"ValidationError: Order validation failed: orderNumber: Path `orderNumber` is required.\n    at Document.invalidate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3379:32)\n    at validatePath (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3154:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 6)\n    at async model.$__validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3095:3)\n    at async model.validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:2672:5)\n    at async model.validateBeforeSave (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\plugins\\validateBeforeSave.js:34:7)\n    at async Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:65:24)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)","userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 12:38:11 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"117ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 12:40:10 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:40:10 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:40:11 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:40:11 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:40:11 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:40:11 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:40:16 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:40:16 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:40:16 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:40:16 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:40:29 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:40:29 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:40:29 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:40:29 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:40:38 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:40:38 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:40:39 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:40:39 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:40:40 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:40:40 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:40:40 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:40:40 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:40:42 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:40:42 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:40:42 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:40:42 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:40:48 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:40:48 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:40:49 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:40:49 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 12:59:06 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 12:59:06 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 12:59:06 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 12:59:06 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:00:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:00:43 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:00:44 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:00:44 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:03:49 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:03:49 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:03:50 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:03:50 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:04:08 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:04:08 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:04:08 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:04:08 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","stack":"ValidationError: Order validation failed: orderNumber: Path `orderNumber` is required.\n    at Document.invalidate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3379:32)\n    at validatePath (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3154:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 6)\n    at async model.$__validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3095:3)\n    at async model.validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:2672:5)\n    at async model.validateBeforeSave (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\plugins\\validateBeforeSave.js:34:7)\n    at async Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:65:24)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:04:08 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"202ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 13:06:45 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:06:45 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:06:52 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:06:53 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:07:33 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:07:33 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:07:33 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:07:33 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","stack":"ValidationError: Order validation failed: orderNumber: Path `orderNumber` is required.\n    at Document.invalidate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3379:32)\n    at validatePath (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3154:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 6)\n    at async model.$__validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3095:3)\n    at async model.validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:2672:5)\n    at async model.validateBeforeSave (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\plugins\\validateBeforeSave.js:34:7)\n    at async Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:65:24)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:07:33 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"195ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 13:12:58 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:12:58 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:12:58 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:12:58 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:12:59 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:12:59 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:12:59 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:12:59 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:13:02 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:13:02 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:13:02 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:13:02 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:14:01 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:14:01 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:14:07 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:14:07 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:14:31 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:14:31 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:14:31 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:14:31 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","stack":"ValidationError: Order validation failed: orderNumber: Path `orderNumber` is required.\n    at Document.invalidate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3379:32)\n    at validatePath (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3154:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 6)\n    at async model.$__validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3095:3)\n    at async model.validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:2672:5)\n    at async model.validateBeforeSave (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\plugins\\validateBeforeSave.js:34:7)\n    at async Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:65:24)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:14:31 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"202ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 13:15:10 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:15:10 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:15:10 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:15:10 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","stack":"ValidationError: Order validation failed: orderNumber: Path `orderNumber` is required.\n    at Document.invalidate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3379:32)\n    at validatePath (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3154:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 6)\n    at async model.$__validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3095:3)\n    at async model.validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:2672:5)\n    at async model.validateBeforeSave (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\plugins\\validateBeforeSave.js:34:7)\n    at async Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:65:24)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:15:10 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"131ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 13:22:56 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:22:56 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:22:56 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:22:56 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:22:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:22:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:22:57 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:22:57 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:23:00 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:23:00 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:23:00 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:23:00 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:23:03 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:23:03 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:23:03 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:23:03 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:23:12 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:23:12 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:23:13 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:23:13 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:23:14 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:23:15 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:23:15 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:23:15 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:23:15 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:23:17 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:23:17 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:23:17 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:23:17 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:23:23 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:23:23 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:23:23 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:23:23 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:23:24 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:23:24 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:23:24 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:23:24 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:24:10 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:24:10 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:24:10 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:24:10 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:25:26 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:25:26 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:25:26 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:25:26 [ERROR] Order creation failed {"error":"Order validation failed: orderNumber: Path `orderNumber` is required.","stack":"ValidationError: Order validation failed: orderNumber: Path `orderNumber` is required.\n    at Document.invalidate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3379:32)\n    at validatePath (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3154:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 6)\n    at async model.$__validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:3095:3)\n    at async model.validate (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\document.js:2672:5)\n    at async model.validateBeforeSave (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\plugins\\validateBeforeSave.js:34:7)\n    at async Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:65:24)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:25:26 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"188ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 13:29:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:29:43 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:29:44 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:29:44 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:30:01 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:30:01 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:30:01 [ERROR] Order creation failed {"error":"next is not a function","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:30:01 [ERROR] Order creation failed {"error":"next is not a function","stack":"TypeError: next is not a function\n    at model.<anonymous> (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/models/Order.js:329:3)\n    at Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:63:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)\n    at async C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:2714:9\n    at async Promise.all (index 0)\n    at async Function.create (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:2699:11)\n    at async createOrder (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/controllers/orderController.js:179:19)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:30:01 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"187ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 13:31:04 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:31:04 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:31:04 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:31:04 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:38:49 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:38:49 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:38:49 [ERROR] Order creation failed {"error":"next is not a function","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:38:50 [ERROR] Order creation failed {"error":"next is not a function","stack":"TypeError: next is not a function\n    at model.<anonymous> (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/models/Order.js:329:3)\n    at Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:63:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)\n    at async C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:2714:9\n    at async Promise.all (index 0)\n    at async Function.create (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:2699:11)\n    at async createOrder (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/controllers/orderController.js:179:19)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:38:50 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"248ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 13:45:12 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:45:12 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:45:12 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:45:12 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:45:35 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:45:35 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:45:36 [ERROR] Order creation failed {"error":"next is not a function","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:45:36 [ERROR] Order creation failed {"error":"next is not a function","stack":"TypeError: next is not a function\n    at model.<anonymous> (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/models/Order.js:329:3)\n    at Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:63:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)\n    at async C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:2714:9\n    at async Promise.all (index 0)\n    at async Function.create (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:2699:11)\n    at async createOrder (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/controllers/orderController.js:179:19)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:45:36 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"224ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 13:45:44 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:45:44 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:45:44 [ERROR] Order creation failed {"error":"next is not a function","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 13:45:44 [ERROR] Order creation failed {"error":"next is not a function","stack":"TypeError: next is not a function\n    at model.<anonymous> (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/models/Order.js:329:3)\n    at Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:63:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)\n    at async C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:2714:9\n    at async Promise.all (index 0)\n    at async Function.create (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:2699:11)\n    at async createOrder (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/controllers/orderController.js:179:19)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 13:45:44 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"140ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 13:47:16 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:47:16 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:47:16 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:47:16 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:58:40 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:58:40 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:58:40 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:58:40 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:58:59 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:58:59 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:59:00 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:59:00 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:59:48 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:59:48 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:59:49 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:59:49 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:59:55 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:59:55 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:59:55 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:59:55 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 13:59:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 13:59:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 13:59:58 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 13:59:58 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:00:04 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:00:04 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:00:05 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:00:05 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:00:05 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:00:05 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:00:24 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:00:24 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:00:24 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:00:24 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:00:29 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:00:29 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:00:30 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:00:30 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:01:52 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:01:53 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:02:34 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 14:02:34 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 14:02:34 [ERROR] Order creation failed {"error":"next is not a function","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 14:02:34 [ERROR] Order creation failed {"error":"next is not a function","stack":"TypeError: next is not a function\n    at model.<anonymous> (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/models/Order.js:165:3)\n    at Kareem.execPre (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\kareem\\index.js:63:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async model.$__save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:369:5)\n    at async model.save (C:\\Users\\manoh\\Desktop\\Git-Projects\\Yaali Backend\\Food App\\Backend\\node_modules\\mongoose\\lib\\model.js:609:5)\n    at async createOrder (file:///C:/Users/manoh/Desktop/Git-Projects/Yaali%20Backend/Food%20App/Backend/common/controllers/orderController.js:147:5)","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 14:02:34 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"291ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 14:05:03 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:05:03 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:05:04 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:05:04 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:09:31 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:09:31 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:09:32 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:09:32 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:09:35 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:09:35 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:09:36 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:09:36 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:09:46 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 14:09:46 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 14:09:46 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":500,"duration":"238ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 14:15:35 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:15:35 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:15:36 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:15:36 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:15:38 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 14:15:38 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 14:15:38 [INFO] HTTP Request {"method":"POST","url":"/api/orders/create","status":201,"duration":"338ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 14:15:38 [INFO] Order sync received {"orderNumber":"Order ORD17672571383904884","from":"server1","to":"server2"}
+2026-01-01 14:15:38 [INFO] Order Order ORD17672571383904884 synced {"orderNumber":"Order ORD17672571383904884","server":"server2"}
+2026-01-01 14:15:38 [INFO] HTTP Request {"method":"POST","url":"/api/orders/sync","status":200,"duration":"211ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 14:22:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:22:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:22:57 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:22:57 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:26:07 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:26:07 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:26:07 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:26:07 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:26:34 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 14:26:34 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 14:26:34 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 14:26:34 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 14:26:54 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 14:26:54 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 14:26:55 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":400,"duration":"187ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 14:27:30 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 14:27:30 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 14:27:30 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":400,"duration":"114ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 14:27:39 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 14:27:39 [INFO] Adding item to cart started {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 14:27:39 [INFO] New cart created for user {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 14:27:39 [INFO] New product added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"currentServer":"server1"}
+2026-01-01 14:27:39 [INFO] Item added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 14:27:39 [INFO] Cart saved successfully {"userId":"6954ef186492aa2bdf5e9957","itemsCount":1,"subTotal":0,"currentServer":"server1"}
+2026-01-01 14:27:39 [INFO] HTTP Request {"method":"POST","url":"/api/carts/add","status":200,"duration":"280ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 14:27:39 [INFO] Starting cart sync to other server {"userId":"6954ef186492aa2bdf5e9957","otherServerUrl":"http://localhost:3002","currentServer":"server1"}
+2026-01-01 14:27:40 [INFO] Order sync received {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","from":"server1","to":"server2"}
+2026-01-01 14:27:40 [INFO] Cart sync request received {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767257859703","serverOrigin":"server1","itemsCount":1,"currentServer":"server2"}
+2026-01-01 14:27:40 [INFO] Order Cart for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","server":"server2"}
+2026-01-01 14:27:40 [INFO] New cart created via sync {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767257859703","itemsCount":1,"serverOrigin":"server1","currentServer":"server2"}
+2026-01-01 14:27:40 [INFO] HTTP Request {"method":"POST","url":"/api/carts/sync","status":201,"duration":"179ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 14:27:40 [INFO] Order Cart update for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart update for user 6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 14:27:40 [INFO] Cart sync completed successfully {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 14:28:19 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 14:28:19 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 14:28:19 [INFO] HTTP Request {"method":"POST","url":"/api/orders/create","status":201,"duration":"280ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 14:28:19 [INFO] Order sync received {"orderNumber":"Order ORD17672578994026008","from":"server1","to":"server2"}
+2026-01-01 14:28:19 [INFO] Order Order ORD17672578994026008 synced {"orderNumber":"Order ORD17672578994026008","server":"server2"}
+2026-01-01 14:28:19 [INFO] HTTP Request {"method":"POST","url":"/api/orders/sync","status":200,"duration":"128ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 15:33:54 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:33:54 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:33:55 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:33:55 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:34:10 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:34:10 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:34:10 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:34:10 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:34:13 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:34:13 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:34:14 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:34:14 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:34:18 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:34:18 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:34:18 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:34:18 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:34:22 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:34:22 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:34:22 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:34:26 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:34:26 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:34:26 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:34:26 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:34:29 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:34:29 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:34:30 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:34:30 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:35:06 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:35:06 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:35:06 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:35:06 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:35:17 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:35:17 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:35:18 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:35:18 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:35:31 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:35:31 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:35:31 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:35:31 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:36:25 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:36:25 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:36:25 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:36:25 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:36:27 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:36:27 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:36:27 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:36:27 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:36:30 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:36:30 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:36:30 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:36:30 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:36:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:36:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:36:32 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:36:32 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:36:50 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:36:50 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:36:51 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:36:51 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:36:53 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:36:53 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:36:53 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:36:53 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:37:17 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:37:17 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:37:18 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:37:18 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:37:20 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:37:20 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:37:20 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:37:20 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:37:25 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:37:25 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:37:26 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:37:26 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:37:38 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:37:38 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:37:38 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:37:38 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:37:47 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:37:47 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:37:47 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:37:47 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:37:51 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:37:51 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:37:51 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:37:51 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:37:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:37:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:37:57 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:37:57 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:38:01 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:38:01 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:38:01 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:38:01 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:38:10 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:38:10 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:38:11 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:38:11 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:38:23 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:38:23 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:38:24 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:38:24 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:38:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:38:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:38:58 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:38:58 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:39:00 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:39:00 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:39:01 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:39:01 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:41:59 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:41:59 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:41:59 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:41:59 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:42:09 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:42:09 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:42:10 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:42:10 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:42:35 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 15:42:35 [INFO] Adding item to cart started {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 15:42:35 [INFO] New cart created for user {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 15:42:35 [INFO] New product added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"currentServer":"server1"}
+2026-01-01 15:42:35 [INFO] Item added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 15:42:35 [INFO] Cart saved successfully {"userId":"6954ef186492aa2bdf5e9957","itemsCount":1,"subTotal":0,"currentServer":"server1"}
+2026-01-01 15:42:35 [INFO] HTTP Request {"method":"POST","url":"/api/carts/add","status":200,"duration":"300ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 15:42:35 [INFO] Starting cart sync to other server {"userId":"6954ef186492aa2bdf5e9957","otherServerUrl":"http://localhost:3002","currentServer":"server1"}
+2026-01-01 15:42:35 [INFO] Order sync received {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","from":"server1","to":"server2"}
+2026-01-01 15:42:35 [INFO] Cart sync request received {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767262355527","serverOrigin":"server1","itemsCount":1,"currentServer":"server2"}
+2026-01-01 15:42:36 [INFO] Order Cart for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","server":"server2"}
+2026-01-01 15:42:36 [INFO] New cart created via sync {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767262355527","itemsCount":1,"serverOrigin":"server1","currentServer":"server2"}
+2026-01-01 15:42:36 [INFO] HTTP Request {"method":"POST","url":"/api/carts/sync","status":201,"duration":"164ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 15:42:36 [INFO] Order Cart update for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart update for user 6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 15:42:36 [INFO] Cart sync completed successfully {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 15:43:17 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 15:43:17 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 15:43:17 [INFO] HTTP Request {"method":"POST","url":"/api/orders/create","status":201,"duration":"248ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 15:43:17 [INFO] Order sync received {"orderNumber":"Order ORD17672623976061324","from":"server1","to":"server2"}
+2026-01-01 15:43:17 [INFO] Order Order ORD17672623976061324 synced {"orderNumber":"Order ORD17672623976061324","server":"server2"}
+2026-01-01 15:43:17 [INFO] HTTP Request {"method":"POST","url":"/api/orders/sync","status":200,"duration":"156ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 15:48:59 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:48:59 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:48:59 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:48:59 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:49:11 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:49:11 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:49:11 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:49:14 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:49:41 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:49:41 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:49:44 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:49:44 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:49:44 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:49:44 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:50:48 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:50:48 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:50:49 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:50:49 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:50:50 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:50:51 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:50:51 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:50:51 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:51:19 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 15:51:19 [INFO] Adding item to cart started {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 15:51:20 [INFO] New cart created for user {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 15:51:20 [INFO] New product added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"currentServer":"server1"}
+2026-01-01 15:51:20 [INFO] Item added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 15:51:20 [INFO] Cart saved successfully {"userId":"6954ef186492aa2bdf5e9957","itemsCount":1,"subTotal":0,"currentServer":"server1"}
+2026-01-01 15:51:20 [INFO] HTTP Request {"method":"POST","url":"/api/carts/add","status":200,"duration":"315ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 15:51:20 [INFO] Starting cart sync to other server {"userId":"6954ef186492aa2bdf5e9957","otherServerUrl":"http://localhost:3002","currentServer":"server1"}
+2026-01-01 15:51:20 [INFO] Order sync received {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","from":"server1","to":"server2"}
+2026-01-01 15:51:20 [INFO] Cart sync request received {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767262880049","serverOrigin":"server1","itemsCount":1,"currentServer":"server2"}
+2026-01-01 15:51:20 [INFO] Order Cart for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","server":"server2"}
+2026-01-01 15:51:20 [INFO] New cart created via sync {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767262880049","itemsCount":1,"serverOrigin":"server1","currentServer":"server2"}
+2026-01-01 15:51:20 [INFO] HTTP Request {"method":"POST","url":"/api/carts/sync","status":201,"duration":"192ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 15:51:20 [INFO] Order Cart update for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart update for user 6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 15:51:20 [INFO] Cart sync completed successfully {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 15:51:31 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 15:51:31 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 15:51:31 [INFO] HTTP Request {"method":"POST","url":"/api/orders/create","status":201,"duration":"252ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 15:51:31 [INFO] Order sync received {"orderNumber":"Order ORD17672628913353752","from":"server1","to":"server2"}
+2026-01-01 15:51:31 [ERROR] Order Order sync failed {"error":"Cannot read properties of null (reading 'syncId')","operation":"Order sync","server":"server2"}
+2026-01-01 15:51:31 [WARN] HTTP Request {"method":"POST","url":"/api/orders/sync","status":500,"duration":"82ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 15:52:09 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:52:09 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:52:10 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:52:10 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:52:12 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:52:12 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:52:12 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:52:12 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:52:16 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:52:16 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:52:16 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:52:16 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:54:52 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:54:52 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:54:54 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:54:54 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:54:55 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:54:55 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:54:56 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:54:56 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:54:57 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:54:57 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:54:59 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:54:59 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:55:00 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:55:00 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:55:06 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 15:55:06 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 15:55:07 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 15:55:07 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 15:55:11 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 15:55:11 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 15:55:11 [WARN] HTTP Request {"method":"POST","url":"/api/orders/create","status":400,"duration":"171ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 15:55:17 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 15:55:17 [INFO] Adding item to cart started {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 15:55:18 [INFO] New cart created for user {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 15:55:18 [INFO] New product added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"currentServer":"server1"}
+2026-01-01 15:55:18 [INFO] Item added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 15:55:18 [INFO] Cart saved successfully {"userId":"6954ef186492aa2bdf5e9957","itemsCount":1,"subTotal":0,"currentServer":"server1"}
+2026-01-01 15:55:18 [INFO] HTTP Request {"method":"POST","url":"/api/carts/add","status":200,"duration":"297ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 15:55:18 [INFO] Starting cart sync to other server {"userId":"6954ef186492aa2bdf5e9957","otherServerUrl":"http://localhost:3002","currentServer":"server1"}
+2026-01-01 15:55:18 [INFO] Order sync received {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","from":"server1","to":"server2"}
+2026-01-01 15:55:18 [INFO] Cart sync request received {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767263117936","serverOrigin":"server1","itemsCount":1,"currentServer":"server2"}
+2026-01-01 15:55:18 [INFO] Order Cart for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","server":"server2"}
+2026-01-01 15:55:18 [INFO] New cart created via sync {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767263117936","itemsCount":1,"serverOrigin":"server1","currentServer":"server2"}
+2026-01-01 15:55:18 [INFO] HTTP Request {"method":"POST","url":"/api/carts/sync","status":201,"duration":"166ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 15:55:18 [INFO] Order Cart update for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart update for user 6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 15:55:18 [INFO] Cart sync completed successfully {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 15:55:23 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 15:55:23 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 15:55:23 [INFO] HTTP Request {"method":"POST","url":"/api/orders/create","status":201,"duration":"275ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 15:55:23 [INFO] Order sync received {"orderNumber":"Order ORD17672631232955836","from":"server1","to":"server2"}
+2026-01-01 15:55:23 [INFO] Order Order ORD17672631232955836 synced {"orderNumber":"Order ORD17672631232955836","server":"server2"}
+2026-01-01 15:55:23 [INFO] HTTP Request {"method":"POST","url":"/api/orders/sync","status":200,"duration":"174ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 16:00:06 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:00:06 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:00:07 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:00:07 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:00:11 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:00:11 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:00:11 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:00:11 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:00:16 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:00:16 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:00:16 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:00:16 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:00:19 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:00:19 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:00:19 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:00:19 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:00:23 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:00:23 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:00:23 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:00:23 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:00:26 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:00:26 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:00:27 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:00:27 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:00:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:00:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:00:32 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:00:32 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:00:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:00:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:00:58 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:00:58 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:10:18 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:10:18 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:10:19 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:10:19 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:14:30 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:14:30 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:14:31 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:14:31 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:14:32 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:14:32 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:14:37 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:14:37 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:14:38 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:14:38 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:18:39 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:18:39 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:18:40 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:18:40 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:18:40 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:18:40 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:18:43 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:18:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:18:43 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:18:43 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:19:33 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:19:33 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:19:33 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:19:33 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:21:46 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:21:46 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:21:47 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:21:47 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:22:43 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:22:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:22:44 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:22:44 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:22:54 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:22:54 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:22:54 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:22:55 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:23:33 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:23:33 [INFO] Adding item to cart started {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 16:23:33 [INFO] New cart created for user {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 16:23:33 [INFO] New product added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"currentServer":"server1"}
+2026-01-01 16:23:34 [INFO] Item added to cart {"userId":"6954ef186492aa2bdf5e9957","productId":"69550d6c7be71c30088b54cc","quantity":2,"server":"server1"}
+2026-01-01 16:23:34 [INFO] Cart saved successfully {"userId":"6954ef186492aa2bdf5e9957","itemsCount":1,"subTotal":0,"currentServer":"server1"}
+2026-01-01 16:23:34 [INFO] HTTP Request {"method":"POST","url":"/api/carts/add","status":200,"duration":"323ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:23:34 [INFO] Starting cart sync to other server {"userId":"6954ef186492aa2bdf5e9957","otherServerUrl":"http://localhost:3002","currentServer":"server1"}
+2026-01-01 16:23:34 [INFO] Order sync received {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","from":"server1","to":"server2"}
+2026-01-01 16:23:34 [INFO] Cart sync request received {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767264813909","serverOrigin":"server1","itemsCount":1,"currentServer":"server2"}
+2026-01-01 16:23:34 [INFO] Order Cart for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart for user 6954ef186492aa2bdf5e9957","server":"server2"}
+2026-01-01 16:23:34 [INFO] New cart created via sync {"userId":"6954ef186492aa2bdf5e9957","syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767264813909","itemsCount":1,"serverOrigin":"server1","currentServer":"server2"}
+2026-01-01 16:23:34 [INFO] HTTP Request {"method":"POST","url":"/api/carts/sync","status":201,"duration":"150ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 16:23:34 [INFO] Order Cart update for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart update for user 6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:23:34 [INFO] Cart sync completed successfully {"userId":"6954ef186492aa2bdf5e9957","currentServer":"server1"}
+2026-01-01 16:23:50 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:23:50 [INFO] Order creation started {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:23:50 [INFO] HTTP Request {"method":"POST","url":"/api/orders/create","status":201,"duration":"269ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:23:50 [INFO] Cart sync clear received {"syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767264813909","currentServer":"server2"}
+2026-01-01 16:23:50 [INFO] Order sync received {"orderNumber":"Order ORD17672648301654898","from":"server1","to":"server2"}
+2026-01-01 16:23:50 [INFO] Cart cleared via sync {"syncId":"server1_cart_6954ef186492aa2bdf5e9957_1767264813909","itemsCleared":1,"previousSubTotal":0,"currentServer":"server2"}
+2026-01-01 16:23:50 [INFO] HTTP Request {"method":"POST","url":"/api/carts/sync/clear","status":200,"duration":"64ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 16:23:50 [INFO] Order Cart cleared for user 6954ef186492aa2bdf5e9957 synced {"orderNumber":"Cart cleared for user 6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:23:50 [INFO] Order Order ORD17672648301654898 synced {"orderNumber":"Order ORD17672648301654898","server":"server2"}
+2026-01-01 16:23:50 [INFO] HTTP Request {"method":"POST","url":"/api/orders/sync","status":200,"duration":"174ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 16:27:09 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:27:09 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:27:10 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:27:10 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:28:01 [INFO] Token verification successful {"userId":"6954ef1983bdbf70edd76781","email":"john.doe@example.com","currentServer":"server2"}
+2026-01-01 16:28:01 [INFO] Fetching user orders {"userId":"6954ef1983bdbf70edd76781","server":"server2"}
+2026-01-01 16:28:01 [INFO] User orders fetched {"userId":"6954ef1983bdbf70edd76781","count":1,"server":"server2"}
+2026-01-01 16:28:01 [INFO] HTTP Request {"method":"GET","url":"/api/orders/my-orders","status":200,"duration":"210ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:28:52 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:28:52 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:28:52 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:28:52 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:30:22 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:30:22 [INFO] Fetching order by ID {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:30:22 [INFO] Order fetched successfully {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:30:22 [INFO] HTTP Request {"method":"GET","url":"/api/orders/6956523e63fc6b94774b9d23","status":200,"duration":"188ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:30:31 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:30:31 [INFO] Fetching order by ID {"orderId":"6956523e63fc6b94774b9d22","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:30:31 [WARN] Order not found {"orderId":"6956523e63fc6b94774b9d22","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:30:31 [WARN] HTTP Request {"method":"GET","url":"/api/orders/6956523e63fc6b94774b9d22","status":404,"duration":"101ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:30:39 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:30:39 [INFO] Fetching order by ID {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:30:39 [INFO] Order fetched successfully {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:30:39 [INFO] HTTP Request {"method":"GET","url":"/api/orders/6956523e63fc6b94774b9d23","status":200,"duration":"144ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:30:59 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:30:59 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:30:59 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:30:59 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:32:39 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:32:39 [INFO] Fetching order by number {"orderNumber":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:32:39 [WARN] Order not found {"orderNumber":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:32:39 [WARN] HTTP Request {"method":"GET","url":"/api/orders/number/6956523e63fc6b94774b9d23","status":404,"duration":"124ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:33:05 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:33:05 [INFO] Fetching order by number {"orderNumber":"ORD17672648301654898","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:33:05 [INFO] Order fetched successfully {"orderNumber":"ORD17672648301654898","userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:33:05 [INFO] HTTP Request {"method":"GET","url":"/api/orders/number/ORD17672648301654898","status":200,"duration":"164ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:34:28 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:34:28 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:34:28 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:34:28 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:36:01 [WARN] Unauthorized access attempt {"ip":"::1","endpoint":"/api/orders/6956523e63fc6b94774b9d23/track"}
+2026-01-01 16:36:01 [WARN] HTTP Request {"method":"GET","url":"/api/orders/6956523e63fc6b94774b9d23/track","status":401,"duration":"7ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:36:13 [WARN] Invalid token {"ip":"::1","endpoint":"/api/orders/6956523e63fc6b94774b9d23/track"}
+2026-01-01 16:36:13 [WARN] HTTP Request {"method":"GET","url":"/api/orders/6956523e63fc6b94774b9d23/track","status":401,"duration":"8ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:36:22 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:36:22 [INFO] Tracking order {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:36:22 [INFO] HTTP Request {"method":"GET","url":"/api/orders/6956523e63fc6b94774b9d23/track","status":200,"duration":"169ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:37:15 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:37:15 [INFO] Tracking order {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:37:15 [INFO] HTTP Request {"method":"GET","url":"/api/orders/6956523e63fc6b94774b9d23/track","status":200,"duration":"123ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:37:18 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:37:18 [INFO] Tracking order {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:37:18 [INFO] HTTP Request {"method":"GET","url":"/api/orders/6956523e63fc6b94774b9d23/track","status":200,"duration":"126ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:37:56 [WARN] HTTP Request {"method":"GET","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":404,"duration":"6ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:38:09 [WARN] Unauthorized access attempt {"ip":"::1","endpoint":"/api/orders/6956523e63fc6b94774b9d23/status"}
+2026-01-01 16:38:09 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":401,"duration":"3ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:38:18 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:38:18 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":500,"duration":"38ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:38:40 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/Confirm","status":404,"duration":"1ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:38:59 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:38:59 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:39:00 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:39:00 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:39:07 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:39:07 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:39:07 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:39:07 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:39:11 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:39:11 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:39:11 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:39:11 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:40:32 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:40:32 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":500,"duration":"64ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:41:18 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:41:18 [INFO] Updating order status {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","status":"cancelled","server":"server1"}
+2026-01-01 16:41:18 [INFO] Order status updated {"orderId":"6956523e63fc6b94774b9d23","oldStatus":"pending","newStatus":"cancelled","server":"server1"}
+2026-01-01 16:41:19 [INFO] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":200,"duration":"179ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:41:19 [INFO] Order sync update started {"syncId":"server1_order_1767264830147_nz3bb9o0s","action":"update_status","server":"server2"}
+2026-01-01 16:41:19 [INFO] Order sync update successful {"syncId":"server1_order_1767264830147_nz3bb9o0s","oldStatus":"cancelled","newStatus":"cancelled","server":"server2"}
+2026-01-01 16:41:19 [INFO] HTTP Request {"method":"PUT","url":"/api/orders/sync/server1_order_1767264830147_nz3bb9o0s","status":200,"duration":"103ms","ip":"::1","userAgent":"axios/1.13.2"}
+2026-01-01 16:41:19 [INFO] Order Order status ORD17672648301654898 synced {"orderNumber":"Order status ORD17672648301654898","server":"server1"}
+2026-01-01 16:41:39 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:41:39 [INFO] Updating order status {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","status":"asdfghjk","server":"server1"}
+2026-01-01 16:41:39 [WARN] Status update validation failed {"orderId":"6956523e63fc6b94774b9d23","errors":"{\"status\":\"Status must be one of: pending, confirmed, preparing, ready, out_for_delivery, delivered, cancelled, failed\"}","server":"server1"}
+2026-01-01 16:41:39 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":400,"duration":"34ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:41:54 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:41:54 [INFO] Updating order status {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","status":"qwertyuiodfghj","server":"server1"}
+2026-01-01 16:41:54 [WARN] Status update validation failed {"orderId":"6956523e63fc6b94774b9d23","errors":"{\"status\":\"Status must be one of: pending, confirmed, preparing, ready, out_for_delivery, delivered, cancelled, failed\"}","server":"server1"}
+2026-01-01 16:41:54 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":400,"duration":"37ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:43:20 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:43:20 [INFO] Updating order status {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","status":"delivered","server":"server1"}
+2026-01-01 16:43:20 [WARN] Status update restricted {"orderId":"6956523e63fc6b94774b9d23","attemptedStatus":"delivered","server":"server1"}
+2026-01-01 16:43:20 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":403,"duration":"101ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:43:41 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:43:41 [INFO] Updating order status {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","status":"cancel","server":"server1"}
+2026-01-01 16:43:41 [WARN] Status update validation failed {"orderId":"6956523e63fc6b94774b9d23","errors":"{\"status\":\"Status must be one of: pending, confirmed, preparing, ready, out_for_delivery, delivered, cancelled, failed\"}","server":"server1"}
+2026-01-01 16:43:41 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":400,"duration":"34ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:43:54 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:43:54 [INFO] Updating order status {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","status":"cancelled","server":"server1"}
+2026-01-01 16:43:54 [WARN] Order cancellation restricted {"orderId":"6956523e63fc6b94774b9d23","currentStatus":"cancelled","server":"server1"}
+2026-01-01 16:43:54 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":400,"duration":"95ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:44:11 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:44:11 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":500,"duration":"36ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:44:51 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:44:51 [INFO] Updating order status {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","status":"","server":"server1"}
+2026-01-01 16:44:51 [WARN] Status update validation failed {"orderId":"6956523e63fc6b94774b9d23","errors":"{\"status\":\"Status must be one of: pending, confirmed, preparing, ready, out_for_delivery, delivered, cancelled, failed\"}","server":"server1"}
+2026-01-01 16:44:51 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":400,"duration":"37ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:45:34 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:45:34 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:45:34 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:45:34 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:46:18 [WARN] Unauthorized access attempt {"ip":"::1","endpoint":"/api/orders/summary"}
+2026-01-01 16:46:18 [WARN] HTTP Request {"method":"GET","url":"/api/orders/summary","status":401,"duration":"14ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:46:27 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:46:27 [INFO] Fetching order summary {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:46:27 [INFO] Order summary fetched {"userId":"6954ef186492aa2bdf5e9957","server":"server1"}
+2026-01-01 16:46:27 [INFO] HTTP Request {"method":"GET","url":"/api/orders/summary","status":200,"duration":"327ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:48:50 [INFO] Token verification successful {"userId":"6954ef186492aa2bdf5e9957","email":"john.doe@example.com","currentServer":"server1"}
+2026-01-01 16:48:50 [INFO] Updating order status {"orderId":"6956523e63fc6b94774b9d23","userId":"6954ef186492aa2bdf5e9957","status":"cancelled","server":"server1"}
+2026-01-01 16:48:50 [WARN] Order cancellation restricted {"orderId":"6956523e63fc6b94774b9d23","currentStatus":"cancelled","server":"server1"}
+2026-01-01 16:48:50 [WARN] HTTP Request {"method":"PUT","url":"/api/orders/6956523e63fc6b94774b9d23/status","status":400,"duration":"90ms","ip":"::1","userAgent":"PostmanRuntime/7.51.0"}
+2026-01-01 16:51:31 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:51:31 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:51:31 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:51:31 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:21 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:21 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:21 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:21 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:26 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:26 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:27 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:27 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:30 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:30 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:31 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:31 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:33 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:33 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:35 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:35 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:35 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:35 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:41 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:41 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:41 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:41 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:47 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:47 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:47 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:47 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:51 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:51 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:51 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:51 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:55 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:55 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:55 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 16:59:55 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 16:59:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 16:59:58 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 16:59:58 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:00 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:00 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:00 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:00 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:03 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:03 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:03 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:03 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:11 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:11 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:11 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:11 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:13 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:13 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:14 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:14 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:15 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:15 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:16 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:16 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:19 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:19 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:20 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:20 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:33 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:33 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:33 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:33 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:36 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:36 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:36 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:36 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:40 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:40 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:41 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:41 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:43 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:44 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:44 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:46 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:46 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:47 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:47 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:52 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:52 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:52 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:52 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:00:56 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:00:56 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:00:56 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:00:56 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:01:22 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:01:22 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:01:22 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:01:23 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:01:24 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:01:24 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:01:25 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:01:25 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:01:29 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:01:29 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:01:29 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:01:29 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:01:47 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:01:47 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:01:47 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:01:47 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:01:48 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:01:48 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:02:13 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:02:13 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:02:13 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:02:13 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:02:20 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:02:20 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:02:20 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:02:20 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:02:22 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:02:22 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:02:22 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:02:22 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:02:27 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:02:27 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:02:27 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:02:27 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:02:30 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:02:30 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:02:30 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:02:30 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:02:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:02:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:02:32 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:02:32 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:02:36 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:02:36 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:02:36 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:02:36 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:02:43 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:02:43 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:02:43 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:02:43 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:02 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:02 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:03 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:03 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:06 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:06 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:06 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:06 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:12 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:12 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:12 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:12 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:15 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:15 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:15 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:15 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:17 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:17 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:18 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:18 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:22 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:22 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:22 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:22 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:25 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:25 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:25 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:25 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:29 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:29 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:30 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:30 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:34 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:34 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:34 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:34 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:46 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:46 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:46 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:46 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:48 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:48 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:48 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:03:48 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:59 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:03:59 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:03:59 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:03:59 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:04:12 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:04:12 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:04:12 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:04:12 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:04:15 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:04:15 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:04:15 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:04:15 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:10 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:10 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:11 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:11 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:13 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:13 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:13 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:13 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:17 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:17 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:17 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:17 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:20 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:20 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:20 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:20 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:25 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:25 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:25 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:25 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:28 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:28 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:28 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:28 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:33 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:33 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:53 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:53 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:54 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:54 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:57 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:57 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:57 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:57 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:12:58 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:12:58 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:12:59 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:12:59 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:13:03 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:13:03 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:13:04 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:13:04 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:13:04 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:13:04 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:13:18 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:13:18 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:13:19 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:13:19 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:13:24 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:13:24 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:13:24 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:13:24 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:13:28 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:13:28 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:13:28 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:13:28 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:13:34 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:13:34 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:13:35 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:13:35 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:13:50 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:13:50 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:13:51 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:13:51 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:14:58 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:14:58 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:14:58 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:14:58 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:15:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:15:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:15:32 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:15:32 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:18:31 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:18:31 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:18:31 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:18:31 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:18:32 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:18:32 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:18:33 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:18:33 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:18:36 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:18:36 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:18:36 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:18:36 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:18:55 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:18:55 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:18:55 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:18:55 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:19:31 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:19:31 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:19:31 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:19:31 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:19:38 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:19:38 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:19:38 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:19:38 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:19:40 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:19:40 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:19:40 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:19:40 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:19:41 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:19:41 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:19:42 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:19:42 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:20:56 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:20:56 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:20:56 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:20:56 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:20:59 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:20:59 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:20:59 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:20:59 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:21:14 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:21:14 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:21:14 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:21:14 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:21:18 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:21:18 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:21:18 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:21:18 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:22:45 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:22:45 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:22:45 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:22:46 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:22:49 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:22:49 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:22:49 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:22:49 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:22:58 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:22:58 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:22:59 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:22:59 [INFO] Database connected {"serverName":"server2"}
+2026-01-01 17:23:04 [INFO] Server started {"port":"3001","serverName":"server1"}
+2026-01-01 17:23:04 [INFO] Server started {"port":"3002","serverName":"server2"}
+2026-01-01 17:23:04 [INFO] Database connected {"serverName":"server1"}
+2026-01-01 17:23:04 [INFO] Database connected {"serverName":"server2"}

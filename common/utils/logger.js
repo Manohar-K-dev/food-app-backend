@@ -374,6 +374,243 @@ export const apiLogger = {
     },
   },
 
+  // Order Logs
+  order: {
+    create: {
+      start: (userId, server) =>
+        logger.info("Order creation started", { userId, server }),
+      success: (userId, orderNumber, server) =>
+        logger.info("Order created successfully", {
+          userId,
+          orderNumber,
+          server,
+        }),
+      error: (error, userId, server) =>
+        logger.error("Order creation failed", {
+          error: error.message,
+          userId,
+          server,
+        }),
+
+      validationFailed: (userId, errors, server) =>
+        logger.warn("Order validation failed", {
+          userId,
+          errors: JSON.stringify(errors),
+          server,
+        }),
+
+      cartEmpty: (userId, server) =>
+        logger.warn("Empty cart for order", { userId, server }),
+
+      cartEmptyAfterCleanup: (userId, server) =>
+        logger.warn("Cart empty after cleanup", { userId, server }),
+
+      unavailableItems: (userId, items, server) =>
+        logger.warn("Unavailable items in order", {
+          userId,
+          items: items.map((i) => i.name || i.productId),
+          server,
+        }),
+    },
+
+    get: {
+      start: (userId, server) =>
+        logger.info("Fetching user orders", { userId, server }),
+      success: (userId, count, server) =>
+        logger.info("User orders fetched", {
+          userId,
+          count,
+          server,
+        }),
+      error: (error, userId, server) =>
+        logger.error("Failed to fetch orders", {
+          error: error.message,
+          userId,
+          server,
+        }),
+      validationError: (userId, errors, server) =>
+        logger.warn("Pagination validation failed", {
+          userId,
+          errors: JSON.stringify(errors),
+          server,
+        }),
+    },
+
+    getById: {
+      start: (orderId, userId, server) =>
+        logger.info("Fetching order by ID", {
+          orderId,
+          userId,
+          server,
+        }),
+      success: (orderId, userId, server) =>
+        logger.info("Order fetched successfully", {
+          orderId,
+          userId,
+          server,
+        }),
+      error: (error, orderId, server) =>
+        logger.error("Failed to fetch order", {
+          error: error.message,
+          orderId,
+          server,
+        }),
+      notFound: (orderId, userId, server) =>
+        logger.warn("Order not found", {
+          orderId,
+          userId,
+          server,
+        }),
+    },
+
+    getByNumber: {
+      start: (orderNumber, userId, server) =>
+        logger.info("Fetching order by number", {
+          orderNumber,
+          userId,
+          server,
+        }),
+      success: (orderNumber, userId, server) =>
+        logger.info("Order fetched successfully", {
+          orderNumber,
+          userId,
+          server,
+        }),
+      error: (error, orderNumber, server) =>
+        logger.error("Failed to fetch order", {
+          error: error.message,
+          orderNumber,
+          server,
+        }),
+      notFound: (orderNumber, userId, server) =>
+        logger.warn("Order not found", {
+          orderNumber,
+          userId,
+          server,
+        }),
+    },
+
+    update: {
+      start: (orderId, userId, status, server) =>
+        logger.info("Updating order status", {
+          orderId,
+          userId,
+          status,
+          server,
+        }),
+      success: (orderId, oldStatus, newStatus, server) =>
+        logger.info("Order status updated", {
+          orderId,
+          oldStatus,
+          newStatus,
+          server,
+        }),
+      error: (error, orderId, server) =>
+        logger.error("Failed to update order", {
+          error: error.message,
+          orderId,
+          server,
+        }),
+      validationError: (orderId, errors, server) =>
+        logger.warn("Status update validation failed", {
+          orderId,
+          errors: JSON.stringify(errors),
+          server,
+        }),
+      notFound: (orderId, userId, server) =>
+        logger.warn("Order not found for update", {
+          orderId,
+          userId,
+          server,
+        }),
+      cancelRestricted: (orderId, currentStatus, server) =>
+        logger.warn("Order cancellation restricted", {
+          orderId,
+          currentStatus,
+          server,
+        }),
+      statusUpdateRestricted: (orderId, attemptedStatus, server) =>
+        logger.warn("Status update restricted", {
+          orderId,
+          attemptedStatus,
+          server,
+        }),
+    },
+
+    summary: {
+      start: (userId, server) =>
+        logger.info("Fetching order summary", { userId, server }),
+      success: (userId, server) =>
+        logger.info("Order summary fetched", { userId, server }),
+      error: (error, userId, server) =>
+        logger.error("Failed to fetch order summary", {
+          error: error.message,
+          userId,
+          server,
+        }),
+    },
+  },
+
+  sync: {
+    received: (orderNumber, fromServer, toServer) =>
+      logger.info("Order sync received", {
+        orderNumber,
+        from: fromServer,
+        to: toServer,
+      }),
+    success: (orderNumber, server) =>
+      logger.info(`Order ${orderNumber} synced`, { orderNumber, server }),
+    failed: (error, operation, server) =>
+      logger.error(`Order ${operation} failed`, {
+        error: error.message,
+        operation,
+        server,
+      }),
+    duplicate: (orderNumber, syncId, server) =>
+      logger.warn("Duplicate order in sync", {
+        orderNumber,
+        syncId,
+        server,
+      }),
+    merged: (orderNumber, syncId, server) =>
+      logger.info("Order merged in sync", {
+        orderNumber,
+        syncId,
+        server,
+      }),
+    validationError: (errors, server) =>
+      logger.warn("Sync validation failed", {
+        errors: JSON.stringify(errors),
+        server,
+      }),
+    update: {
+      start: (syncId, action, server) =>
+        logger.info("Order sync update started", {
+          syncId,
+          action,
+          server,
+        }),
+      success: (syncId, oldStatus, newStatus, server) =>
+        logger.info("Order sync update successful", {
+          syncId,
+          oldStatus,
+          newStatus,
+          server,
+        }),
+      error: (error, syncId, server) =>
+        logger.error("Order sync update failed", {
+          error: error.message,
+          syncId,
+          server,
+        }),
+      notFound: (syncId, server) =>
+        logger.warn("Order not found for sync update", {
+          syncId,
+          server,
+        }),
+    },
+  },
+
   // Server logs
   server: {
     started: (port, serverName) => {
